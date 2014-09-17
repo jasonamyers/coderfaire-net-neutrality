@@ -7,12 +7,12 @@
 
 4. Clone the repository
    ```sh
-   $ git clone https://github.com/jasonamyers/pyohio-2014-pandas.git
+   $ git clone https://github.com/jasonamyers/coderfaire-net-neutrality.git
    ```
 
 5. Navigate to the repo folder
    ```sh
-   $ cd pyohio-2014-pandas.git
+   $ cd coderfair-net-neutrality
    ```
 
 6. Install dependencies
