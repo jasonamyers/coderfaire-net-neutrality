@@ -43,7 +43,8 @@
             <h2>What is Net Neutrality to You?</h2>
           </section>
           <section>
-            <h3>Tim Wu - Columbia Law - Network Neutrality, Broadband Discrimination</h3>
+            <h3>Tim Wu - Columbia Law</h3>
+            <h4>Network Neutrality, Broadband Discrimination</h4>
             <blockquote cite="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=388863">the principle that Internet service providers and governments should treat all data on the Internet equally, not discriminating or charging differentially by user, content, site, platform, application, type of attached equipment, and modes of communication.</blockquote>
             <aside class="notes">
               Required reading at CBTS for all IX employees (Engineers, sales people, and consultants).
@@ -51,9 +52,9 @@
           </section>
           <section>
             <h2>Copyright (IP) Issues are not Net Neutrality in the eyes of a Carrier</h2>
+            <h2 class="fragment">... unless they are really a media company</h2>
             <aside class="notes">
               Carriers hate dealing with DMCA and other IP based removal requests.
-              Carriers with media holdings are a terrible reality
             </aside>
           </section>
           <section>
@@ -73,7 +74,10 @@
         </section>
         <section>
           <section>
-            <h2>Da Internet?</h2>
+            <img src=welcome.png></img>
+          </section>
+          <section>
+            <h2>What does it look like?</h2>
             <img src=peoples_view.jpg></img>
             <aside class="notes">This is the typical network map most people build
               in fact I picked this bad example, on purpose because real big problems
@@ -142,14 +146,6 @@
             <img src=3rd-world.jpg></img>
           </section>
           <section>
-            <h2>Equipment</h2>
-            <img src=ix-equip.jpg></img>
-          </section>
-          <section>
-            <h2>Wireless</h2>
-            <img src=lte-cell.jpg></img>
-          </section>
-          <section>
             <h2>IX Network Overview</h2>
             <img src=IXP.jpg></img>
           </section>
@@ -164,7 +160,7 @@
               <li>Tarrifs</li>
               <li>Latas</li>
               <li>Gov Fees</li>
-              <li>IX Feeds</li>
+              <li>IX Fees</li>
             </ul>
           </section>
           <section>
@@ -173,15 +169,22 @@
             <ul>
               <li>Shared</li>
               <li>Direct (sort of) (maybe less shared)</li>
+              <aside class="notes">
+                Shared is often "bill-and-keep"
+                Direct... yeah it can be a bit expensive
+              </aside>
             </ul>
           </section>
           <section>
             <h2>Peering</h2>
             <h3>BGP</h3>
-            <p>Pointed routers at one another</p>
+            <p>Routers pointed at one another</p>
             <p>Agreeing to provide transport at "reasonable level"</p>
             <p class="fragment">Political Routing Protocol</p>
             <p class="fragment">UNBRIDLED POWER</p>
+          </section>
+          <section>
+            <img src=wat.gif></img>
           </section>
           <section>
             <h2>Peering</h2>
@@ -210,6 +213,73 @@
             <p>Pays large portion of provider peering fees</p>
             <p>Fundamentally critical to the Internet</p>
             <p>Offloads more than 30% of US Internet Traffic</p>
+          </section>
+          <section>
+            <h2>Costs for 10Gbit shared</h2>
+            <table class="reveal">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Peering Port</td>
+                  <td>$4,500/mo</td>
+                </tr>
+                <tr>
+                  <td>Equipment</td>
+                  <td>$2,850</td>
+                </tr>
+                <tr>
+                  <td>Colo (Power, Rack, etc)</td>
+                  <td>$5,450/mo</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h2>Costs for 100Gbit up to 24 Color Dedicated</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Cost</th>
+                  <th>Ext Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fiber DWDM Port 100GBit/24 Colors</td>
+                  <td>$325,000</td>
+                  <td>$650,000</td>
+                </tr>
+                <tr>
+                  <td>Crossconnect</td>
+                  <td></td>
+                  <td>$20,000</td>
+                </tr>
+                <tr>
+                  <td>Peering - Connect</td>
+                  <td>$10,000</td>
+                  <td>$20,000/mo</td>
+                </tr>
+                <tr>
+                  <td>Peering - Bandwidth</td>
+                  <td>$1.27/Mbit</td>
+                  <td>$6,400/mo/color</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h2>Equipment</h2>
+            <img src=ix-equip.jpg></img>
+          </section>
+          <section>
+            <h2>Wireless</h2>
+            <img src=lte-cell.jpg></img>
           </section>
         </section>
         <section>
@@ -354,25 +424,51 @@
             <img src=nf-chart2.jpg></img>
           </section>
           <section>
+            <h2>Before</h2>
+            <img src=joy.gif></img>
+          </section>
+          <section>
+            <h2>After</h2>
+            <img src=sleepy.gif></img>
+          </section>
+          <section>
             <h3>Dan Rayburn - Frost & Sullivan</h3>
             <blockquote cite="http://blog.streamingmedia.com/2014/06/netflix-isp-newdata.html">I’ve also heard from some that Netflix has told them that they have self-limited their transit decisions to only ISPs without residential access customers. Most CDNs use ISPs like AT&T, Sprint, Centurylink, Verizon and Comcast as transit options to reach the entire Internet, including each other’s network. Akamai and Limelight for example are connected to every Tier 1 provider and most Tier 2’s to deliver their service. They do not impose these business limitations in order to ensure they deliver services with high quality, so why is Netflix? These are not “peering issues”, these are first mile network decisions that Netflix is 100% in control of.</blockquote>
           </section>
         </section>
         <section>
           <section>
-            <h2>FUD</h2>
-        </section>
+            <h2>FCC exploring Telecomm Acts</h2>
+            <ul>
+              <li>Section 706</li>
+              <li>Title II</li>
+              <li>Title III</li>
+            </ul>
+            <aside class="notes">
+              Section 706 gives the FCC ability to prevent a 'digital divide'
+              Title II lets broadband be fully treated as a telecomm instead of information service - Prices not service
+              Title III  “generally encourage the larger and more effective use of radio in the public interest” - Mobile carriers
+            </aside>
+          </section>
           <section>
+            <h2>Fast Lane/Slow Lane</h2>
+            <aside class="notes">This exists today. Peering agreements and CDNs create this already, and a price point that is out of reach for most startups
+            </aside>
+          </section>
+          <section>
+            <h2>FUD</h2>
             <img src=bs.jpg></img>
+            <aside class="notes">This is based on carriers acting like cable. All the non media carriers will fight this to the end. Carriers want to charge the companies for the peering they consume in a stronger manner.
+            </aside>
           </section>
           <section>
             <h2>Other Rally Cries</h2>
             <ul>
-              <li class="fragment">Title II</li>
               <li class="fragment">Bad Guy Government</li>
               <li class="fragment">Censorship</li>
-              <li class="fragment">Municipality Monolopies</li>
               <li class="fragment">Income Explotation</li>
+              <li class="fragment">Municipality Monolopies</li>
+              <li class="fragment">Price Compared to X Other Country</li>
             </ul>
           </section>
         </section>
@@ -387,7 +483,7 @@
           <section>
             <h1>Pseudo Realistic</h1>
             <ol>
-              <li>Title I and II are not a good fit</li>
+              <li>Existing Telecomm acts don't apply well</li>
               <li>Need a modern bill for the modern Internet</li>
               <li>Needs Consumer, Internet Services, and Carrier input</li>
             </ol>
@@ -399,9 +495,22 @@
         </section>
         <section>
           <h1>What can you do?</h1>
-          <p class="fragment grow">FCC Comments and Events</p>
-          <p class="fragment grow">Vote</p>
-          <p class="fragment grow">Fight Politically Locally</p>
+          <p class="fragment">FCC Comments and Events</p>
+          <p class="fragment">Vote</p>
+          <p class="fragment">Fight Politically Locally</p>
+        </section>
+        <section>
+          <ul>
+            <li class="fragment">This is a very complex issue</li>
+            <li class="fragment">There are million of nuances not readily presented to the end user</li>
+            <li class="fragment">Interweaving multiple problems</li>
+            <li class="fragment">Don't confuse EVIL MEGA CORPs business with their network</li>
+            <li class="fragment">Ponder the difference between carriers and media</li>
+            <li class="fragment">Land mass and Decentralization GREATLY affect our prices</li>
+          </ul>
+        </section>
+        <section>
+          <img src=questions.png></img>
         </section>
       </div>
     </div>
