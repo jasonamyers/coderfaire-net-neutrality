@@ -17,7 +17,7 @@
 
 6. Install dependencies
    ```sh
-   $ npm install grunt-cli
+   $ npm install
    ```
 
 7. Serve the presentation and monitor source files for changes
@@ -57,7 +57,6 @@ reveal.js comes with a speaker notes plugin which can be used to present per-sli
 
 <DL><p>
     <DT><A HREF="http://money.cnn.com/2014/08/29/technology/netflix-comcast/index.html" ADD_DATE="1410910027" LAST_MODIFIED="1410910027">Slow Comcast speeds were costing Netflix customers August 29</A>
-    <DT><A HREF="http://www.akamai.com/dl/akamai/akamai-soti-q114.pdf?WT.mc_id=soti_Q114" ADD_DATE="1410910027" LAST_MODIFIED="1410910027">www.akamai.com/dl/akamai/akamai-soti-q114.pdf?WT.mc_id=soti_Q114</A>
     <DT><A HREF="http://www.akamai.com/html/customers/customer_list.html" ADD_DATE="1410910027" LAST_MODIFIED="1410910027">Customer List | Akamai</A>
     <DT><A HREF="http://www.savetheinternet.com/how-save-internet" ADD_DATE="1410910028" LAST_MODIFIED="1410910028">How to Save the Internet | Free Press</A>
     <DT><A HREF="http://drpeering.net/FAQ/What-is-an-Internet-Exchange-Point.php" ADD_DATE="1410910027" LAST_MODIFIED="1410910027">What is an Internet Exchange Point?</A>
